@@ -1,26 +1,75 @@
-.container{
+body{
+    background-color: black;
+}
+/* Formating the hero grid */
+.container {
+    
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 50px;
     grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
 }
 
-.container > div {
+.container > div {  
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
     color: #ffeead;
+   
 }
 
-.container > div:nth-child(1n) {
-    background-color: #96ceb4;	
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  /* Animation of the hero grid */
+  .down{
+      animation-name: moveInDown;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      
   }
+
+  .up{
+      animation-name: moveInUp;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+  }
+
+  @keyframes moveInDown {
+      0% {
+          opacity: 0;
+          transform: translateY(-100px);
+      }
+      80% {
+          transform: translateY(50px);
+          
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes moveInUp{
+      0% {
+          opacity:0;
+          transform: translateY(100px);
+      }
+
+      80% {
+          transform: translateY(-50px);
+      }
+      
+      100%{
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
   
-  .container > div:nth-child(3n) {
-    background-color: #88d8b0;
-  }
-  
-  .container > div:nth-child(2n) {
-        background-color: #ff6f69;
-  }
