@@ -8,7 +8,7 @@ var audio = document.getElementById("batman");
 // batman.src = "sounds/batman.wav";
 
 for (var i=0; i<roll.length; i++){
-    roll[i].addEventListener("mouseover",function(){
+    roll[i].addEventListener("click",function(){
         var idImg = this.id
         document.getElementById("audio" + idImg).play();
     });

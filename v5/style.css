@@ -1,6 +1,17 @@
 body{
     background-color: black;
 }
+
+#heroes{
+    color:yellow;
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+    text-align: center;
+    animation-name : heroes;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    margin-top:0;
+}
 /* Formating the hero grid */
 .container {
     
@@ -22,9 +33,9 @@ body{
 .container > div > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-   
+    object-fit: cover; 
 }
+
 
 
   /* Animation of the hero grid */
@@ -32,6 +43,7 @@ body{
       animation-name: moveInDown;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+      position: relative;
       
   }
 
@@ -39,6 +51,7 @@ body{
       animation-name: moveInUp;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+      position: relative;
   }
 
   @keyframes moveInDown {
@@ -73,32 +86,48 @@ body{
       }
   }
 
-  .panel{
-     
-      transform: {translatey(-100%)};
+
+  @keyframes heroes{
+      0%{
+          opacity:0;
+          transform: translateX(-400px);
+      }
+      100%{
+          opacity: 1;
+          transform: translatex(0);
+      }
+  }
+ 
+  .question{
+      color: white;
+      visibility: visible;
+      font-size: 16px;
   }
 
-  /* .panel > *{
-    border: 1px solid red;
-  } */
-  
-  .text{
-     
-      align-items: center;
-      justify-content: center;
-      position: absolute; /* //put it on front; */
-     transform: translateY(100%);
-     opacity: 0.0;
-  }
-  
-  .text.open-active{
-      transform:translateY(0);
-     
+  .notactive{
+      visibility: hidden;
+      position: relative;
   }
 
-  .panel.open{
-      font-size:40px;
+  .active{
+      position: absolute;
       
   }
 
+  .notactive1{
+    visibility: hidden;
+    position: relative;
+}
+
+.active1{
+    position: absolute;
+    
+}
+
   
+
+ 
+
+    
+    
+
