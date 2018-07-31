@@ -11,16 +11,21 @@ var roll = document.querySelectorAll("img");
     
 // }
 
-// for (var i=0; i<roll.length; i++){
-//     roll[i].addEventListener("click", function (){
-//         var idImg = this.id // get the id of the image
-//         document.getElementById("audio" + idImg).play()
-     
-       
-//     })
+for (var i=0; i<roll.length; i++){
+    roll[i].addEventListener("click", function (){
+        var idImg = this.id // get the id of the image
+        document.getElementById("audio" + idImg).play();
+    });
+}
     
-// }
+
+
+
 document.querySelector('.down').addEventListener('click', guessWho);
+
+
+
+
 
 function guessWho(){
     document.querySelector('.image-1-panel').classList.toggle('notactive');
@@ -39,6 +44,7 @@ function guessWho(){
     document.querySelector('.image-7-panel').classList.toggle('notactive');
     document.querySelector('.image-8-panel').classList.toggle('active');
     document.querySelector('.image-8-panel').classList.toggle('notactive3');
+    
 
 
 }

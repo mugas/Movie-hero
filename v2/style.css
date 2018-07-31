@@ -1,6 +1,21 @@
 body{
     background-color: black;
 }
+
+
+#heroes{
+    color:yellow;
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+    text-align: center;
+    animation-name : heroes;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    margin-top:0;
+    margin-bottom: 50px;
+}
+
+
 /* Formating the hero grid */
 .container {
     
@@ -71,5 +86,24 @@ body{
           transform: translateY(0);
       }
   }
-
   
+  @keyframes heroes{
+    0%{
+        opacity:0;
+        transform: translateX(-400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.notactive{
+    visibility: hidden;
+    position: relative;
+}
+
+.active{
+    position: absolute;
+    
+}

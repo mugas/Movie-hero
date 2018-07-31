@@ -1,5 +1,6 @@
 body{
     background-color: black;
+  
 }
 
 #heroes{
@@ -35,6 +36,7 @@ body{
     height: 100%;
     object-fit: cover; 
 }
+
 
 
 
@@ -97,12 +99,14 @@ body{
           transform: translatex(0);
       }
   }
+
+
  
-  .question{
-      color: white;
-      visibility: visible;
-      font-size: 16px;
-  }
+p:hover{
+    background-color: yellow;
+    margin: 0;
+}
+  
 
   .notactive{
       visibility: hidden;
@@ -111,23 +115,10 @@ body{
 
   .active{
       position: absolute;
-      
   }
-
-  .notactive1{
-    visibility: hidden;
-    position: relative;
-}
-
-.active1{
-    position: absolute;
-    
+  
+.batman-background{
+    background-color: red;
 }
 
   
-
- 
-
-    
-    
-
