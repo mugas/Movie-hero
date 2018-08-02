@@ -22,12 +22,17 @@ document.querySelector('.forth-panel').addEventListener('click', alfred);
 function batman(){
         document.querySelector('.image-1-panel').classList.toggle('notactive');
         document.querySelector('.image-2-panel').classList.toggle('notactive');
-        document.body.style.background = red;
+        //document.body.style.background = "red";
+        document.querySelector('.background').classList.toggle('bane-background');
+        
+        
     }
 
 function bane(){
     document.querySelector('.image-3-panel').classList.toggle('notactive');
     document.querySelector('.image-4-panel').classList.toggle('notactive');
+    document.body.style.background = "yellow";
+
 }
 
 function joker(){
