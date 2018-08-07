@@ -107,6 +107,7 @@ p:hover{
     margin: 0;
 }
   
+/*Hero Images*/
 
   .notactive{
       visibility: hidden;
@@ -116,11 +117,31 @@ p:hover{
   .active{
       position: absolute;
   }
+
+  /*Images background*/
+.batman-background{
+    background: #BA8B02;  
+    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  
+    background: linear-gradient(to right, #181818, #BA8B02); 
+    
+}
   
 .bane-background{
-    background-color: red;
+background: #f12711;  
+background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);  
+background: linear-gradient(to bottom, #f5af19, #f12711); 
+
 }
 
-  .test{
-    background-image:url("https://images.unsplash.com/photo-1508603081604-c654889cfea2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4913bd9dcfa4de6cf9e931e098d80515&auto=format&fit=crop&w=500&q=60");
-  }
+.joker-background{
+    background: #52c234; 
+    background: -webkit-linear-gradient(to left, #52c234, #061700); 
+    background: linear-gradient(to left, #52c234, #061700);
+}
+
+.alfred-background{
+    background: #780206; 
+    background: -webkit-linear-gradient(to top, #061161, #780206);  
+    background: linear-gradient(to top, #061161, #780206); 
+}
+
