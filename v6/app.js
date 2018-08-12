@@ -21,11 +21,12 @@ document.querySelector('.forth-panel').addEventListener('click', alfred);
 
 
 function batman(){
+   
         document.querySelector('.image-1-panel').classList.toggle('notactive');
         document.querySelector('.image-2-panel').classList.toggle('notactive');
         document.querySelector('.background').classList.toggle('batman-background');
         var text = document.getElementById("heroes");
-        if(text.innerHTML !== "Batman"){
+        if(text.innerHTML === "Heroes are back  "){
             text.innerHTML="Batman";
     } else {
             text.innerHTML = "Heroes are back";
@@ -39,9 +40,7 @@ function bane(){
     var text = document.getElementById("heroes");
     if(text.innerHTML !== "Bane"){
         text.innerHTML="Bane";
-} else {
-        text.innerHTML = "Heroes are back";
-    }
+} 
 
 }
 
@@ -51,8 +50,9 @@ function joker(){
     document.querySelector('.image-6-panel').classList.toggle('notactive');
     document.querySelector('.background').classList.toggle('joker-background');
     var text = document.getElementById("heroes");
-    if(text.innerHTML !== "Joker"){
-        text.innerHTML = "Joker";
+    if(text.innerHTML !== "Joker" && img.src !=="flash.svg"){
+        text.innerHTML = "Joker"; 
+         img.src = "flash.svg";
     } else {
         text.innerHTML = "Heroes are back";
     }
