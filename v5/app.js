@@ -30,6 +30,7 @@ function batman(){
     } else {
             text.innerHTML = "Heroes are back";
         }      
+       
     }
 
 function bane(){
@@ -71,6 +72,11 @@ function alfred(){
 }
 
 
+
+//setTimeout(batman,1000);
+//setTimeout(bane,1500);
+//setTimeout(joker,2000);
+//setTimeout(alfred,2500);
 
 
 
