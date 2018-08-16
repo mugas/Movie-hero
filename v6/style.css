@@ -3,6 +3,18 @@ body{
   
 }
 
+
+h1{
+    color:yellow;
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+    text-align: center;
+    animation-name : heroes;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    margin-top:0;
+}
+
 #heroes{
     color:yellow;
     font-family: 'Bangers', cursive;
