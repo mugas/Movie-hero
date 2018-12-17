@@ -1,159 +1,145 @@
-body{
-    background-color: black;
-  
+body {
+  background-color: black;
+  overflow: hidden;
 }
 
-
-h1{
-    color:yellow;
-    font-family: 'Bangers', cursive;
-    font-size: 80px;
-    text-align: center;
-    animation-name : heroes;
-    animation-duration: 1000ms;
-    animation-timing-function: ease-out;
-    margin-top:0;
+h1 {
+  color: yellow;
+  font-family: "Bangers", cursive;
+  font-size: 80px;
+  text-align: center;
+  animation-name: heroes;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  margin-top: 0;
 }
 
-#heroes{
-    color:yellow;
-    font-family: 'Bangers', cursive;
-    font-size: 80px;
-    text-align: center;
-    animation-name : heroes;
-    animation-duration: 1000ms;
-    animation-timing-function: ease-out;
-    margin-top:0;
+#heroes {
+  color: yellow;
+  font-family: "Bangers", cursive;
+  font-size: 80px;
+  text-align: center;
+  animation-name: heroes;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  margin-top: 0;
 }
 /* Formating the hero grid */
 .container {
-    
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 500px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 500px;
 }
 
-.container > div {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-   
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
 }
 
 .container > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-
-
-  /* Animation of the hero grid */
-  .down{
-      animation-name: moveInDown;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
-      position: relative;
-      
-  }
-
-  .up{
-      animation-name: moveInUp;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
-      position: relative;
-  }
-
-  @keyframes moveInDown {
-      0% {
-          opacity: 0;
-          transform: translateY(-100px);
-      }
-      80% {
-          transform: translateY(50px);
-          
-      }
-
-      100% {
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
-
-  @keyframes moveInUp{
-      0% {
-          opacity:0;
-          transform: translateY(100px);
-      }
-
-      80% {
-          transform: translateY(-50px);
-      }
-      
-      100%{
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
-
-
-  @keyframes heroes{
-      0%{
-          opacity:0;
-          transform: translateX(-400px);
-      }
-      100%{
-          opacity: 1;
-          transform: translatex(0);
-      }
-  }
-
-
- 
-p:hover{
-    background-color: yellow;
-    margin: 0;
+/* Animation of the hero grid */
+.down {
+  animation-name: moveInDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  position: relative;
 }
-  
+
+.up {
+  animation-name: moveInUp;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  position: relative;
+}
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  80% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroes {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+p:hover {
+  background-color: yellow;
+  margin: 0;
+}
+
 /*Hero Images*/
 
-  .notactive{
-      visibility: hidden;
-      position: relative;
-  }
-
-  .active{
-      position: absolute;
-  }
-
-  /*Images background*/
-.batman-background{
-    background: #BA8B02;  
-    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  
-    background: linear-gradient(to right, #181818, #BA8B02); 
-    
-}
-  
-.bane-background{
-background: #f12711;  
-background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);  
-background: linear-gradient(to bottom, #f5af19, #f12711); 
-
+.notactive {
+  visibility: hidden;
+  position: relative;
 }
 
-.joker-background{
-    background: #52c234; 
-    background: -webkit-linear-gradient(to left, #52c234, #061700); 
-    background: linear-gradient(to left, #52c234, #061700);
+.active {
+  position: absolute;
 }
 
-.alfred-background{
-    background: #780206; 
-    background: -webkit-linear-gradient(to top, #061161, #780206);  
-    background: linear-gradient(to top, #061161, #780206); 
+/*Images background*/
+.batman-background {
+  background: #ba8b02;
+  background: -webkit-linear-gradient(to right, #181818, #ba8b02);
+  background: linear-gradient(to right, #181818, #ba8b02);
 }
 
+.bane-background {
+  background: #f12711;
+  background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+  background: linear-gradient(to bottom, #f5af19, #f12711);
+}
+
+.joker-background {
+  background: #52c234;
+  background: -webkit-linear-gradient(to left, #52c234, #061700);
+  background: linear-gradient(to left, #52c234, #061700);
+}
+
+.alfred-background {
+  background: #780206;
+  background: -webkit-linear-gradient(to top, #061161, #780206);
+  background: linear-gradient(to top, #061161, #780206);
+}
