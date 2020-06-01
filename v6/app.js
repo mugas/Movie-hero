@@ -1,5 +1,4 @@
-
-//Sound on click
+/* //Sound on click
 var roll = document.querySelectorAll("img");
 
 for (var i=0; i<roll.length; i++){
@@ -79,11 +78,22 @@ setInterval(function (){
         titles.innerHTML ="Heroes are back";
     }
     
-},3000);
+},3000); */
 
+const cards = document.querySelectorAll(".cards__single");
+const images = document.querySelector(".cards__image");
 
+console.log(cards);
 
+const showText = () => {
+  console.log("hello");
+  images.classList.add("cards__opacity");
+};
 
+cards.forEach((card) => {
+  card.addEventListener("click", showText);
+});
 
-
-
+/* images.forEach((image) => {
+  image.addEventListener("click", showText);
+}); */
