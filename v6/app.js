@@ -80,20 +80,31 @@ setInterval(function (){
     
 },3000); */
 
-const cards = document.querySelectorAll(".cards__single");
+/* const cards = document.querySelector(".cards__single");
 const images = document.querySelector(".cards__image");
 
 console.log(cards);
 
 const showText = () => {
   console.log("hello");
-  images.classList.add("cards__opacity");
+  // images.classList.add("cards__opacity");
+  cards.classList.toggle("flipped");
 };
 
-cards.forEach((card) => {
+/* cards.forEach((card) => {
   card.addEventListener("click", showText);
-});
+}); */
 
+// cards.addEventListener("click", showText);
 /* images.forEach((image) => {
   image.addEventListener("click", showText);
 }); */
+
+const cardis = document.querySelector(".card");
+const frontis = document.querySelector(".front");
+
+function flip() {
+  console.log("hello");
+  cardis.classList.toggle("flipped");
+}
+cardis.addEventListener("click", flip);

@@ -1,9 +1,11 @@
-.cards {
+/* .cards {
   display: flex;
   justify-content: space-evenly;
   border: 2px red solid;
   height: 75%;
+  position: relative;
 }
+
 .cards > div {
   flex: 1;
 }
@@ -11,11 +13,11 @@
   border: 2px green solid;
 }
 
-.cards__opacity {
-  opacity: 0;
-}
+
 p {
   color: white;
+  position: relative;
+  opacity: 0;
 }
 
 body {
@@ -28,9 +30,6 @@ body {
   object-fit: cover;
 }
 
-.cards.is-flipped {
-  transform: rotateY(180deg);
-}
 
 h1 {
   color: yellow;
@@ -41,41 +40,10 @@ h1 {
   animation-duration: 1000ms;
   animation-timing-function: ease-out;
   margin-top: 0;
-}
+} */
 
-#heroes {
-  color: yellow;
-  font-family: "Bangers", cursive;
-  font-size: 80px;
-  text-align: center;
-  animation-name: heroes;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-out;
-  margin-top: 0;
-}
-/* Formating the hero grid */
-.container {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 500px;
-}
+/* 
 
-.container > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  color: #ffeead;
-}
-
-.container > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Animation of the hero grid */
 .down {
   animation-name: moveInDown;
   animation-duration: 2s;
@@ -137,7 +105,7 @@ p:hover {
   margin: 0;
 }
 
-/*Hero Images*/
+
 
 .notactive {
   visibility: hidden;
@@ -147,28 +115,60 @@ p:hover {
 .active {
   position: absolute;
 }
+ */
 
-/*Images background*/
-.batman-background {
-  background: #ba8b02;
-  background: -webkit-linear-gradient(to right, #181818, #ba8b02);
-  background: linear-gradient(to right, #181818, #ba8b02);
+.container {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  border: 1px solid #ccc;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
 }
-
-.bane-background {
-  background: #f12711;
-  background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
-  background: linear-gradient(to bottom, #f5af19, #f12711);
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
 }
-
-.joker-background {
-  background: #52c234;
-  background: -webkit-linear-gradient(to left, #52c234, #061700);
-  background: linear-gradient(to left, #52c234, #061700);
+.card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 140px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-
-.alfred-background {
-  background: #780206;
-  background: -webkit-linear-gradient(to top, #061161, #780206);
-  background: linear-gradient(to top, #061161, #780206);
+.card .front {
+  background: red;
+}
+.card .back {
+  background: blue;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
