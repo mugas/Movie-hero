@@ -1,16 +1,21 @@
 .cards {
   display: flex;
+
   justify-content: space-evenly;
   border: 2px red solid;
   height: 75%;
   position: relative;
+  perspective: 1000px;
 }
 
 .cards > div {
   flex: 1;
 }
+
 .cards__single {
   border: 2px green solid;
+  transform-style: preserve-3d;
+  transition: 0.5s;
 }
 
 /* .cards > div > img {
@@ -34,7 +39,14 @@
 .active:after {
   display: none;
 }
+.cards__front {
+  transform: rotateY(180deg);
+}
 
-.test {
-  background: red;
+.cards__front,
+.cards__back {
+  backface-visibility: hidden;
+}
+.cards__single.test {
+  transform: rotateY(180deg);
 }
