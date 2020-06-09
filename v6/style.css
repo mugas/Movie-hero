@@ -2,17 +2,19 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
-  height: 25%;
+  /* height: 50%; */
   position: relative;
   perspective: 1000px;
   align-items: stretch;
 }
-/* 
-.cards > div {
+
+/* .cards > div {
   flex: 1;
 } */
 
 .cards__single {
+  display: flex;
+  flex-direction: column;
   width: 20%;
   border: 1px red solid;
   border-radius: 16px;
@@ -36,32 +38,22 @@
 .cards__single.test {
   transform: rotateY(180deg);
 }
+.cards__front {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-/* .cards__front {
-  width: 200px;
-} */
-
-/* .cards__image {
-  text-align: center;
-  width: 100%;
-  height: 250px;
-}*/
-
-/* .cards__single .cards__front img {
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  border: 1px red solid;
-  margin-top: 25%;
-  width: 250px;
-  height: 250px;
-}  */
-
+.cards__back {
+  display: flex;
+  flex-direction: column;
+}
 .cards__front img {
-  width: 100px;
-  object-fit: cover;
-  border-radius: 50%;
   margin: 0;
+  height: 50%;
+}
+.cards__album {
+  font-style: italic;
 }
 
 /* .cards > div > img {
@@ -78,3 +70,23 @@
 .active:after {
   display: none;
 } */
+/* .cards__front {
+  width: 200px;
+} */
+
+.cards__image {
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+  /* height: 250px; */
+}
+
+/* .cards__single .cards__front img {
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border: 1px red solid;
+  margin-top: 25%;
+  width: 250px;
+  height: 250px;
+}  */
