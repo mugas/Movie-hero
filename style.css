@@ -10,9 +10,7 @@ body {
   display: block;
   text-align: center;
 }
-.test {
-  opacity: 0;
-}
+
 .cards {
   display: flex;
   flex-direction: column;
