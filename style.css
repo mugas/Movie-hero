@@ -38,6 +38,7 @@ body {
 
 .cards__front,
 .cards__back {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
