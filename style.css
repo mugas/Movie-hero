@@ -41,6 +41,10 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateX(0deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards__front {
@@ -71,7 +75,8 @@ body {
 
 .cards__back {
   transform: rotateY(180deg);
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
