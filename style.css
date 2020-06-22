@@ -40,13 +40,13 @@ body {
 .cards__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: rotateX(0deg);
 }
 
 .cards__front {
   display: flex;
   flex-direction: column;
   height: 100%;
+  transform: rotateX(0deg);
 }
 
 .cards__artist,
