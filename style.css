@@ -40,6 +40,7 @@ body {
 .cards__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  transform: rotateX(0deg);
 }
 
 .cards__front {
@@ -90,8 +91,6 @@ li {
 }
 .cards__single.flip {
   transform: rotateY(180deg);
-  -webkit-backface-visibility: visible; /* Safari */
-  backface-visibility: visible;
 }
 
 @media (min-width: 768px) {
