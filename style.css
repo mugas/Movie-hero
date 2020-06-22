@@ -87,13 +87,12 @@ h2 {
 
 li {
   line-height: 21px;
-  /* text-align: start; */
 }
 .cards__single.flip {
   transform: rotateY(180deg);
+  -webkit-backface-visibility: visible; /* Safari */
+  backface-visibility: visible;
 }
-/* .cards__single.flip .cards__back {
-} */
 
 @media (min-width: 768px) {
   .cards {
