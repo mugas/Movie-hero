@@ -47,6 +47,7 @@ body {
   flex-direction: column;
   height: 100%;
   transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
 }
 
 .cards__artist,
@@ -71,6 +72,7 @@ body {
 
 .cards__back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   position: absolute;
   text-align: center;
   display: flex;
@@ -91,6 +93,7 @@ li {
 }
 .cards__single.flip {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 @media (min-width: 768px) {
