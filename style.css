@@ -40,6 +40,9 @@ body {
 .cards__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-perspective: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  visibility: visible;
 }
 
 .cards__front {
