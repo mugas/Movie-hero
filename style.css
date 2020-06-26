@@ -33,6 +33,7 @@ body {
   -webkit-transition: 0.5s;
   position: relative;
   text-align: center;
+  width: 80%;
   transition: transform 0.6s;
   -webkit-transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -108,7 +109,6 @@ li {
     perspective: 1000px;
     align-items: stretch;
   }
-
   .cards__single {
     width: 20%;
   }
