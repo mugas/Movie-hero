@@ -42,6 +42,7 @@ body {
 
 .cards__front,
 .cards__back {
+  /* It works on  3d elements */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
