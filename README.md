@@ -1,28 +1,82 @@
-# Movie-hero
+[![Social banner for mugas](./assets/Flipcards_banner.png)](http://ricardomoreira.io/)
 
-## Css and Javascript Animation
+<h1 align="center"> 🔥Flip Cards🔥</h1>
 
-Simple app where you press the card and, it show up the caracthere behind and also his/her voice.When pressing it again, it goes back to the initial card.
+<h2 align="center"> A Music Album page to learn how to flip a card in Javascript </h2>
 
-First project where I start using Javascript. 
-Even that the code is ugly and there is big room for improvement I want to leave it like that, to remind me always from where I start. Also because this project was not based in any tutorial I want to leave it the way it is.
+### Index
 
+* [Name](#Name) 👈
+* [Links](#Links) 🔗
+* [Description](#Description) 📖
+* [Languages and Frameworks](####Languages-and-Frameworks) ⚙️
+* [Screenshots](#Screenshots) 📱
+* [Instalation](#Instalation) 🧩
+* [Support](#Support) 🆘
+* [Roadmap](#Roadmap) 🗺️
+* [Authors and acknowledgment](####Authors-and-acknowledgment) ✍️
+* [Project Status](#Project-Status) 📜
 
-In this project I pratice my skills in `Dom Manipulation` and also `CSS Animations`.
+# Name
 
+Flip Card
 
+# Links
 
-In `Javascript` learn how to interact with the HTML and also get to know more about functions
+[Website](https://goodstuffmusicalbum.netlify.app/)
 
-In `CSS`, I use  `CSS` Grid and some animation for the images and texts.
+[Presentation](https://www.ricardomoreira.io/blog/2020-06-15-flip-cards-with-javascript/)
+___
 
-Resuming:
-<p>Skills Learned:</p>
+# Description
 
-<ul>
-    <li>Dom Manipulation</li>
-    <li>CSS Grid</li>
-    <li>Functions</li>
-    <li>For Loops</li>
-    <li>CSS Animations</li>
-</ul>
+A Page with Album covers that when pressed is fliped/turned and show the other side of the card with more info
+
+___
+
+# Languages, Frameworks and others
+
+* **Javascript** - Language
+* **Css** - Styling
+
+____
+
+# Screenshots
+
+Home Page         |  Flip Page
+:-------------------------:|:-------------------------:
+![](assets/screenshot.png)  |  ![](assets/screenshot1.png)
+
+____
+
+# Instalation
+
+___
+
+# Support
+
+Have any question or find something that doesn't look good? Let's talk 😊
+
+[Here](https://github.com/mugas)
+
+[And Here](https://www.ricardomoreira.io/about)
+
+____
+
+# Roadmap
+
+Nothing to add
+
+____
+
+# Authors-and-acknowledgment
+
+* Me 😊
+
+____
+
+# Project-Status  
+
+Nothing to add
+
+____
